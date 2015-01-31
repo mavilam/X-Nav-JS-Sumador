@@ -1,22 +1,13 @@
-function changer (id, newValue) {
-	var element = document.getElementById(id);
-	element.innerHTML = newValue;
-};
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<p>Adder...<span id='op'>5+3</span>
+	<span id="res"></span> <a href="javascript:sum()">Add!</a></p>
+	<p><a href="javascript:rand()">Random!</a></p>
 
-function sum(){
-
-	var op = document.getElementById("op");
-	var opp = op.innerHTML;
-	var oplist = opp.split("+");
-	var result = parseInt(oplist[0]) + parseInt(oplist[1]);
-	var res = document.getElementById("res");
-	res.innerHTML = result;
+	<script type="text/javascript" charset="utf-8" src="suma.js"></script>
 	
-};
-
-function rand(){
-	var op = document.getElementById("op");
-	var suma = Math.round(Math.random()*10) + "+" + Math.round(Math.random()*10);
-	op.innerHTML = suma;
-
-}
+</body>
+</html>
